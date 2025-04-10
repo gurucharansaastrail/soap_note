@@ -175,7 +175,7 @@ const VoiceRecorder: React.FC = () => {
     formData.append("file", blob, "recording.wav");
 
     try {
-      const res = await fetch("http://localhost:8000/audio-to-soap", {
+      const res = await fetch("https://soapnote.astutedoc.com/audio-to-soap", {
         method: "POST",
         body: formData,
         headers: {
