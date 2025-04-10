@@ -330,7 +330,12 @@ const VoiceRecorder: React.FC = () => {
       {audioBlob && (
         <button
           onClick={() => uploadAudio(audioBlob)}
-          className="mt-4 mb-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          style={{
+            margin: "10px",
+            padding: "10px 20px",
+            backgroundColor: "green",
+            color: "white",
+          }}
         >
           Get SOAP
         </button>
