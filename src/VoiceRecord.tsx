@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaMicrophone } from "react-icons/fa";
-import { Bars } from "react-loader-spinner";
+import Spinner from "./components/Spinner";
 // import lamejs from "lamejs";
 
 const VoiceRecorder: React.FC = () => {
@@ -337,15 +337,7 @@ const VoiceRecorder: React.FC = () => {
       )}
 
       {loading ? (
-        <Bars
-          height="80"
-          width="80"
-          color="#4fa94d"
-          ariaLabel="bars-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-        />
+        <Spinner />
       ) : (
         <div className="max-w-2xl mx-auto mt-8 p-6 bg-white rounded-2xl shadow-lg space-y-6">
           <div>
